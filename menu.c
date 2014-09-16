@@ -39,41 +39,41 @@ void main()
 	void putMenuList(DataNode *a);
 	/*this is declaration of putListOne*/
 	void putListOne(DataNode *b , DataNode *c);
-    static DataNode head[] = 
+	static DataNode head[] =
 	{
 		{"help","this is help cmd.",&head[1]},
-        {"search","this is search cmd.",&head[2]},
-        {"copy","this is copy cmd.",&head[3]},
+		{"search","this is search cmd.",&head[2]},
+		{"copy","this is copy cmd.",&head[3]},
 		{"version","menu progrram v2.0",NULL}
 	};
-    DataNode * p = head;
-    printf("menu list : \n");
-    putMenuList(p);
-    putListOne(p , head);   
+	DataNode * p = head;
+	printf("menu list : \n");
+	putMenuList(p);
+	putListOne(p , head);   
 }
 
 /*this is definition of putMenuList*/
 void putMenuList(DataNode *a)
 {
-    while(a != NULL)
-    {
-        printf("%s - %s\n", a->cmd, a->desc);
-        a = a->next;
-    } 
+	while(a != NULL)
+	{
+		printf("%s - %s\n", a->cmd, a->desc);
+		a = a->next;
+	} 
 }
 
 /*this is definition of putListOne*/
 void putListOne(DataNode *b , DataNode *c)
 {
-    while(1)
-    {
-        char cmd[CMD_LEN];
+	while(1)
+	{
+		char cmd[CMD_LEN];
         printf("Input a cmd > ");
         scanf("%s", cmd);
         b = c;
         while(b != NULL)
-        {
-            if(!strcmp(b->cmd , cmd))
+		{
+			if(!strcmp(b->cmd , cmd))
             {
                 printf("%s - %s\n", b->cmd, b->desc);
                 break;
@@ -82,7 +82,7 @@ void putListOne(DataNode *b , DataNode *c)
         }
 		if(b == NULL)
 		{
-		printf("This is a wrong cmd !\n ");
+			printf("This is a wrong cmd !\n ");
 		}
 	}
 }
