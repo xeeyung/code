@@ -68,17 +68,17 @@ void putListOne(DataNode *b , DataNode *c)
 	while(1)
 	{
 		char cmd[CMD_LEN];
-        printf("Input a cmd > ");
-        scanf("%s", cmd);
-        b = c;
-        while(b != NULL)
+		printf("Input a cmd > ");
+		scanf("%s", cmd);
+		b = c;
+		while(b != NULL)
 		{
 			if(!strcmp(b->cmd , cmd))
-            {
-                printf("%s - %s\n", b->cmd, b->desc);
-                break;
-            }
-            b = b->next;
+			{
+				printf("%s - %s\n", b->cmd, b->desc);
+				break;
+			}
+			b = b->next;
         }
 		if(b == NULL)
 		{
