@@ -79,7 +79,7 @@ void putListOne(DataNode *b , DataNode *c)
 				break;
 			}
 			b = b->next;
-        }
+		}
 		if(b == NULL)
 		{
 			printf("This is a wrong cmd !\n ");
