@@ -1,10 +1,10 @@
 /**************************************************************************************************/
-/* Copyright (C) xeeyung@163.com, sse@USTC, 2014-2015                                                         */
-/*                                                                                                                                      */
-/*  FILE NAME             :  menu.c                                                                                        */
-/*  PRINCIPAL AUTHOR      :  Xuyang                                                                            */
-/*  SUBSYSTEM NAME        :  menu                                                                                   */
-/*  MODULE NAME           :  menu                                                                                     */
+/* Copyright (C) xeeyung@163.com, sse@USTC, 2014-2015                                             */
+/*                                                                                                */
+/*  FILE NAME             :  menu.c                                                               */
+/*  PRINCIPAL AUTHOR      :  Xuyang                                                               */
+/*  SUBSYSTEM NAME        :  menu                                                                 */
+/*  MODULE NAME           :  menu                                                                 */
 /*  LANGUAGE              :  C                                                                    */
 /*  TARGET ENVIRONMENT    :  ANY                                                                  */
 /*  DATE OF FIRST RELEASE :  2014/09/15                                                           */
